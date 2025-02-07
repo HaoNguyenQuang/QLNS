@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: base_project_1.1
+  datasource: #Change when dev
+    url:
+    username:
+    password:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        id:
+          new_generator_mappings: true
+        show:
+          sql: true
+        format_sql: true
+        hb2dll:
+          auto: update
+    generate-ddl: true
